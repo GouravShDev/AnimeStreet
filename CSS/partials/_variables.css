@@ -1,0 +1,15 @@
+
+/* These properties helps to modify elements total width and height */
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+/* CSS Variables */
+
+:root{
+    --primary-color: #12C9B4;
+    --bg-color: #121212;
+}
