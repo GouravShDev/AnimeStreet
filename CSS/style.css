@@ -1,23 +1,37 @@
-body{
-  background-color: #202124;
-  position: relative;
-  color: #f3f2da;
+.green {
+  color: #12C9B4;
 }
-p{
-  color: #f3f2da;
+.navbar a {
+  color: #12C9B4;
+}
+body{
+  background-color: #121212;
+  position: relative;
+  color: #12C9B4;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 /*-----Nav bar----*/
 .navbar{
-  padding:1% 3%;
+  background-color: #121212;
+  font-weight: bold;
+  padding:1% 3% 1% 0.5%;
   border-bottom-style: solid;
-  border-color: white;
+  border-color: #12C9B4;
 }
-.navbar-brand{
-font-size: 2rem;
+.logo {
+  height: 5vh;
+  margin-right: 10px;
 }
-/*-----recommendations Sliding window/carousel-----*/
+.logo-name {
+  float: right;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  height: 0.1vh;
+}
 .carousel{
-  padding:2% 7%;
+  padding:1% 10%;
   margin-bottom: 5%;
 }
 .carousel-item{
@@ -26,27 +40,28 @@ font-size: 2rem;
 .carousel-img{
   height: 480px;
   opacity: 0.6;
-  padding: 1% 12%;
+  padding: 1% 3%;
 }
 @media (max-width: 700px){
   .carousel-img{
     height: 250px;}
 }
-.recommendations{
-  text-align: left;
+.carousel-img-info {
   position: absolute;
-  top: 15%;
-  left: 15%;
+  left: 0;
+  right: 0;
+  background-color: #121212;
+  opacity: 0.5;
 }
-.recommendations img{
-  height: 150px;
+
+p {
+  padding-top: 0px;
+  font-weight: bold;
 }
-.recommendations h3{
-  font-family: 'Work Sans', sans-serif;
+.carousel-img-info h3{
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.5;
-  color: #f3f2da;
 }
 .carousel-control-next{
   width: 4%;
@@ -60,30 +75,26 @@ font-size: 2rem;
   top: 30%;
   left: 6%;
 }
-.recommendations i{
-  color: #12C9B4;
+.btn {
   padding: 0 2%;
 }
 .blue-bg {
   background-color:blue;
 }
-/****Middle Content****/
 .pre-nxt-btn{
   font-size: 25px;
-  color: #12C9B4;
   padding: 1% 2%;
+  color: #12C9B4;
 }
 #page-navigation{
   text-align: right;
   padding-bottom: 1%;
 }
-/*****Content section*****/
 .container-for-content{
   margin-bottom: 5%;
 }
-/*****Footer sectiom**//***/
 footer{
-  padding: 0px;
+  padding: 10px 0px 0px 0px;
   text-align: center;
   border-style: solid;
   border-width:3px 0 0 0;
@@ -94,10 +105,9 @@ footer{
 .contact-icon {
   font-size: 30px;
   padding-left: 10px;
-  color: #ffffff;
+  color: #12C9B4;
 }
 .bottom-text{
-  color: #11999E;
   font-weight: bold;
 }
 .follow{
