@@ -1,105 +1,160 @@
-body{
-  background-color: #202124;
+/* css variables */
+@import url(partials/_variables.css);
+
+/* STARTS tags styles */
+
+body {
+  background-color: var(--bg-color);
   position: relative;
-  color: #f3f2da;
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
 }
-p{
-  color: #f3f2da;
+p {
+  padding-top: 0;
+  /* font-weight: bold; */
 }
-/*-----Nav bar----*/
-.navbar{
-  padding:1% 3%;
-  border-bottom-style: solid;
-  border-color: white;
+footer {
+  padding-top: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 3px 0 0 0;
 }
-.navbar-brand{
-font-size: 2rem;
+
+/* END tags styles */
+
+/*-------------------------------START Nav bar------------------------------*/
+
+.navbar-toggler .fas {
+  color: var(--primary-color);
 }
-/*-----recommendations Sliding window/carousel-----*/
-.carousel{
-  padding:2% 7%;
-  margin-bottom: 5%;
+
+.navbar a {
+  color: var(--primary-color);
 }
-.carousel-item{
-  position: relative;
-}
-.carousel-img{
-  height: 480px;
-  opacity: 0.6;
-  padding: 1% 12%;
-}
-@media (max-width: 700px){
-  .carousel-img{
-    height: 250px;}
-}
-.recommendations{
-  text-align: left;
-  position: absolute;
-  top: 15%;
-  left: 15%;
-}
-.recommendations img{
-  height: 150px;
-}
-.recommendations h3{
-  font-family: 'Work Sans', sans-serif;
+.navbar-nav > .active > a {
   font-weight: bold;
-  font-size: 2rem;
-  line-height: 1.5;
-  color: #f3f2da;
 }
-.carousel-control-next{
+.navbar-nav a:hover {
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: var(--bg-color);
+  /* font-weight: bold; */
+  padding: 1% 3% 1% 0.5%;
+  border-bottom-style: solid;
+  border-color: var(--primary-color);
+}
+.logo {
+  height: 5vh;
+  margin-right: 10px;
+}
+.logo-name {
+  float: right;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  height: 0.1vh;
+}
+
+/*-------------------------------END Nav bar------------------------------*/
+
+/*-------------------------------START Sliding window recommendations------------------------------*/
+
+.carousel {
+  padding: 1% 10%;
+  margin: 3% auto;
+}
+.carousel .carousel-item {
+  position: relative;
+}
+.carousel-item .far {
+  color: var(--primary-color);
+}
+.carousel-img {
+  height: 25rem;
+  /* display: block; */
+  width: 90% !important;
+  opacity: 0.6;
+  object-fit: cover;
+  margin: auto;
+  /* padding: 1% 3%; */
+}
+
+@media (max-width: 700px) {
+  .carousel-img {
+    height: 12rem;
+  }
+}
+
+
+.carousel-caption {
+  position: absolute;
+  height: 30%;
+  max-width: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bg-color);
+  opacity: 0.7;
+}
+
+.carousel-img-info h3 {
+  /* font-weight: bold; */
+  font-size: 1.5rem;
+  /* line-height: 1.5; */
+}
+.carousel-control-next,
+.carousel-control-prev {
   width: 4%;
   height: 40%;
   top: 30%;
-  right: 6%;
 }
-.carousel-control-prev{
-  width: 4%;
-  height: 40%;
-  top: 30%;
-  left: 6%;
+.carousel-control-prev {
+  left: 10%;
 }
-.recommendations i{
-  color: #12C9B4;
+.carousel-control-next {
+  right: 10%;
+}
+
+/*-------------------------------END Sliding window recommendations------------------------------*/
+
+.btn {
   padding: 0 2%;
 }
 .blue-bg {
-  background-color:blue;
+  background-color: blue;
 }
-/****Middle Content****/
-.pre-nxt-btn{
+.pre-nxt-btn {
   font-size: 25px;
-  color: #12C9B4;
   padding: 1% 2%;
+  color: var(--primary-color);
 }
-#page-navigation{
+#page-navigation {
   text-align: right;
   padding-bottom: 1%;
 }
-/*****Content section*****/
-.container-for-content{
+.container-for-content {
   margin-bottom: 5%;
 }
-/*****Footer sectiom**//***/
-footer{
-  padding: 0px;
-  text-align: center;
-  border-style: solid;
-  border-width:3px 0 0 0;
+
+.bottom-text {
+  font-weight: bold;
 }
+
+/*-------------------------------START Footer------------------------------*/
 .contact-div {
   display: inline-block;
 }
 .contact-icon {
   font-size: 30px;
   padding-left: 10px;
-  color: #ffffff;
+  color: var(--primary-color);
 }
-.bottom-text{
-  color: #11999E;
+
+.follow {
   font-weight: bold;
 }
-.follow{
-  font-weight: bold;
-}
+
+/*-------------------------------END Footer------------------------------*/
