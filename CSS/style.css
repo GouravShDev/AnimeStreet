@@ -6,7 +6,8 @@
 body {
   background-color: var(--bg-color);
   position: relative;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: white;
   margin: 0;
   padding: 0;
 }
@@ -14,12 +15,7 @@ p {
   padding-top: 0;
   /* font-weight: bold; */
 }
-footer {
-  padding-top: 10px;
-  text-align: center;
-  border-style: solid;
-  border-width: 3px 0 0 0;
-}
+
 
 /* END tags styles */
 
@@ -28,14 +24,17 @@ footer {
 .navbar-toggler .fas {
   color: var(--primary-color);
 }
-
-.navbar a {
+.navbar-brand .logo-name{
   color: var(--primary-color);
 }
-.navbar-nav > .active > a {
-  font-weight: bold;
+.navbar-brand{
+  margin-left: 3%;
 }
-.navbar-nav a:hover {
+.navbar a {
+  color: #999A9E;
+}
+.navbar-nav > .active > a, .navbar-nav a:hover {
+  color: whitesmoke;
   font-weight: bold;
 }
 
@@ -46,6 +45,9 @@ footer {
   border-bottom-style: solid;
   border-color: var(--primary-color);
 }
+
+
+
 .logo {
   height: 5vh;
   margin-right: 10px;
@@ -75,7 +77,7 @@ footer {
 .carousel-img {
   height: 25rem;
   /* display: block; */
-  width: 90% !important;
+  width: 80% !important;
   opacity: 0.6;
   object-fit: cover;
   margin: auto;
@@ -84,8 +86,14 @@ footer {
 
 @media (max-width: 700px) {
   .carousel-img {
-    height: 12rem;
+    height: 10rem;
+    width: 90% !important;
   }
+}
+
+.carousel .slide-icon{
+  color: var(--primary-color);
+  font-size: 40px;
 }
 
 
@@ -144,6 +152,17 @@ footer {
 }
 
 /*-------------------------------START Footer------------------------------*/
+
+footer {
+  padding-top: 10px;
+  border-color: var(--primary-color);
+  text-align: center;
+  border-style: solid;
+  border-width: 2px 0 0 0;
+}
+
+
+
 .contact-div {
   display: inline-block;
 }
