@@ -1,25 +1,20 @@
-
-
 /* css variables */
 @import url(partials/_variables.css);
 
-
-
-
 /* STARTS tags styles */
 
-body{
+body {
   background-color: var(--bg-color);
   position: relative;
   color: var(--primary-color);
   margin: 0;
   padding: 0;
 }
-p{
+p {
   padding-top: 0;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
-footer{
+footer {
   padding-top: 10px;
   text-align: center;
   border-style: solid;
@@ -28,22 +23,26 @@ footer{
 
 /* END tags styles */
 
-
-
-.green {
-  color: var(--primary-color);
-}
 /*-------------------------------START Nav bar------------------------------*/
 
+.navbar-toggler .fas {
+  color: var(--primary-color);
+}
 
 .navbar a {
   color: var(--primary-color);
 }
-
-.navbar{
-  background-color: var(--bg-color);
+.navbar-nav > .active > a {
   font-weight: bold;
-  padding:1% 3% 1% 0.5%;
+}
+.navbar-nav a:hover {
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: var(--bg-color);
+  /* font-weight: bold; */
+  padding: 1% 3% 1% 0.5%;
   border-bottom-style: solid;
   border-color: var(--primary-color);
 }
@@ -61,53 +60,62 @@ footer{
 
 /*-------------------------------END Nav bar------------------------------*/
 
-
 /*-------------------------------START Sliding window recommendations------------------------------*/
 
-.carousel{
-  padding:1% 10%;
-  margin-bottom: 5%;
+.carousel {
+  padding: 1% 10%;
+  margin: 3% auto;
 }
-.carousel .carousel-item{
+.carousel .carousel-item {
   position: relative;
 }
-.carousel-img{
+.carousel-item .far {
+  color: var(--primary-color);
+}
+.carousel-img {
   height: 25rem;
   /* display: block; */
-  width: 80% !important;
+  width: 90% !important;
   opacity: 0.6;
   object-fit: cover;
   margin: auto;
   /* padding: 1% 3%; */
 }
-@media (max-width: 700px){
-  .carousel-img{
-    height: 250px;}
-}
-.carousel-img-info {
-  position: absolute;
-  left: 0;
-  right: 0;
-  background-color: var(--bg-color);
-  opacity: 0.8;
+
+@media (max-width: 700px) {
+  .carousel-img {
+    height: 12rem;
+  }
 }
 
-.carousel-img-info h3{
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 1.5;
+
+.carousel-caption {
+  position: absolute;
+  height: 30%;
+  max-width: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bg-color);
+  opacity: 0.7;
 }
-.carousel-control-next{
+
+.carousel-img-info h3 {
+  /* font-weight: bold; */
+  font-size: 1.5rem;
+  /* line-height: 1.5; */
+}
+.carousel-control-next,
+.carousel-control-prev {
   width: 4%;
   height: 40%;
   top: 30%;
-  right: 6%;
 }
-.carousel-control-prev{
-  width: 4%;
-  height: 40%;
-  top: 30%;
-  left: 6%;
+.carousel-control-prev {
+  left: 10%;
+}
+.carousel-control-next {
+  right: 10%;
 }
 
 /*-------------------------------END Sliding window recommendations------------------------------*/
@@ -116,25 +124,24 @@ footer{
   padding: 0 2%;
 }
 .blue-bg {
-  background-color:blue;
+  background-color: blue;
 }
-.pre-nxt-btn{
+.pre-nxt-btn {
   font-size: 25px;
   padding: 1% 2%;
   color: var(--primary-color);
 }
-#page-navigation{
+#page-navigation {
   text-align: right;
   padding-bottom: 1%;
 }
-.container-for-content{
+.container-for-content {
   margin-bottom: 5%;
 }
 
-.bottom-text{
+.bottom-text {
   font-weight: bold;
 }
-
 
 /*-------------------------------START Footer------------------------------*/
 .contact-div {
@@ -146,7 +153,7 @@ footer{
   color: var(--primary-color);
 }
 
-.follow{
+.follow {
   font-weight: bold;
 }
 
