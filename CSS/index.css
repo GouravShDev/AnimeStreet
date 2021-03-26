@@ -45,10 +45,12 @@ footer {
   padding: 1% 3% 1% 0.5%;
   border-bottom-style: solid;
   border-color: var(--primary-color);
+  opacity: 0.9;
 }
 .logo {
-  height: 5vh;
+  height: 42px;
   margin-right: 10px;
+
 }
 .logo-name {
   float: right;
@@ -56,6 +58,10 @@ footer {
   margin-bottom: 0%;
   padding-bottom: 0%;
   height: 0.1vh;
+}
+
+.topfixed{
+  padding: 0;
 }
 
 /*-------------------------------END Nav bar------------------------------*/
