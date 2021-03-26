@@ -12,8 +12,15 @@ footer {
   
   
   
-  .contact-div {
-    display: inline-block;
+  .social-menu ul{
+    position: relative;
+    list-style-type: none;
+    display: inline-flex;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .social-menu ul li a i:hover{
+    transform:translate(0,-5px);
   }
   .contact-icon {
     font-size: 30px;

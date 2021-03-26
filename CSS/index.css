@@ -29,6 +29,7 @@ p {
 }
 .carousel .carousel-item {
   position: relative;
+  margin-top: 19px;
 }
 .carousel-item .far {
   color: var(--primary-color);
