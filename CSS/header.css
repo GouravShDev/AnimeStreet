@@ -1,0 +1,45 @@
+
+
+
+/*-------------------------------START Nav bar------------------------------*/
+
+.navbar-toggler .fas {
+    color: var(--primary-color);
+  }
+  .navbar-brand .logo-name{
+    color: var(--primary-color);
+  }
+  .navbar-brand{
+    margin-left: 3%;
+  }
+  .navbar a {
+    color: #999A9E;
+  }
+  .navbar-nav > .active > a, .navbar-nav a:hover {
+    color: whitesmoke;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    background-color: var(--bg-color);
+    /* font-weight: bold; */
+    padding: 1% 3% 1% 0.5%;
+    border-bottom-style: solid;
+    border-color: var(--primary-color);
+  }
+  
+  
+  
+  .logo {
+    height: 5vh;
+    margin-right: 10px;
+  }
+  .logo-name {
+    float: right;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    height: 0.1vh;
+  }
+  
+  /*-------------------------------END Nav bar------------------------------*/

@@ -1,0 +1,28 @@
+
+
+/*-------------------------------START Footer------------------------------*/
+
+footer {
+    padding-top: 10px;
+    border-color: var(--primary-color);
+    text-align: center;
+    border-style: solid;
+    border-width: 2px 0 0 0;
+  }
+  
+  
+  
+  .contact-div {
+    display: inline-block;
+  }
+  .contact-icon {
+    font-size: 30px;
+    padding-left: 10px;
+    color: var(--primary-color);
+  }
+  
+  .follow {
+    font-weight: bold;
+  }
+  
+  /*-------------------------------END Footer------------------------------*/
