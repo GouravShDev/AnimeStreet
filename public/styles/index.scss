@@ -1,64 +1,5 @@
 /* css variables */
-@import url(partials/_variables.css);
-
-/* STARTS tags styles */
-
-body {
-  background-color: var(--bg-color);
-  position: relative;
-  color: var(--primary-color);
-  margin: 0;
-  padding: 0;
-}
-p {
-  padding-top: 0;
-  /* font-weight: bold; */
-}
-footer {
-  padding-top: 10px;
-  text-align: center;
-  border-style: solid;
-  border-width: 3px 0 0 0;
-}
-
-/* END tags styles */
-
-/*-------------------------------START Nav bar------------------------------*/
-
-.navbar-toggler .fas {
-  color: var(--primary-color);
-}
-
-.navbar a {
-  color: var(--primary-color);
-}
-.navbar-nav > .active > a {
-  font-weight: bold;
-}
-.navbar-nav a:hover {
-  font-weight: bold;
-}
-
-.navbar {
-  background-color: var(--bg-color);
-  /* font-weight: bold; */
-  padding: 1% 3% 1% 0.5%;
-  border-bottom-style: solid;
-  border-color: var(--primary-color);
-}
-.logo {
-  height: 5vh;
-  margin-right: 10px;
-}
-.logo-name {
-  float: right;
-  margin-top: 2%;
-  margin-bottom: 0%;
-  padding-bottom: 0%;
-  height: 0.1vh;
-}
-
-/*-------------------------------END Nav bar------------------------------*/
+@import "const";
 
 /*-------------------------------START Sliding window recommendations------------------------------*/
 
@@ -70,7 +11,7 @@ footer {
   position: relative;
 }
 .carousel-item .far {
-  color: var(--primary-color);
+  color: $primary_color;
 }
 .carousel-img {
   height: 25rem;
@@ -88,7 +29,6 @@ footer {
   }
 }
 
-
 .carousel-caption {
   position: absolute;
   height: 30%;
@@ -96,7 +36,7 @@ footer {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: var(--bg-color);
+  background-color: $bg_color;
   opacity: 0.7;
 }
 
@@ -129,7 +69,7 @@ footer {
 .pre-nxt-btn {
   font-size: 25px;
   padding: 1% 2%;
-  color: var(--primary-color);
+  color: $primary_color;
 }
 #page-navigation {
   text-align: right;
@@ -150,7 +90,7 @@ footer {
 .contact-icon {
   font-size: 30px;
   padding-left: 10px;
-  color: var(--primary-color);
+  color: $primary_color;
 }
 
 .follow {
